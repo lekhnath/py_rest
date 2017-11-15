@@ -13,7 +13,7 @@ def simple_app(environ, start_response):
 
     start_response(status, headers)
 
-    ret = ['Hello WOrld']
+    ret = ['Hello WOrld content change from next']
     return ret
 
 httpd = make_server('', 3000, simple_app)
