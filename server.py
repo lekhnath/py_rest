@@ -13,8 +13,7 @@ def simple_app(environ, start_response):
 
     start_response(status, headers)
 
-    ret = ["%s: %s\n" % (key, value)
-           for key, value in environ.iteritems()]
+    ret = ['Hello WOrld']
     return ret
 
 httpd = make_server('', 3000, simple_app)
