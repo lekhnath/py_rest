@@ -3,6 +3,8 @@
 from wsgiref.util import setup_testing_defaults
 from wsgiref.simple_server import make_server
 
+import config
+
 # A relatively simple WSGI application. It's going to print out the
 # environment dictionary after being updated by setup_testing_defaults
 def simple_app(environ, start_response):
