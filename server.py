@@ -17,6 +17,6 @@ def simple_app(environ, start_response):
            for key, value in environ.iteritems()]
     return ret
 
-httpd = make_server('', 8000, simple_app)
-print "Serving on port 8000..."
+httpd = make_server('', 3000, simple_app)
+print "Serving on port 3000..."
 httpd.serve_forever()
